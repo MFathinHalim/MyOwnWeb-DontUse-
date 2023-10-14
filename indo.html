@@ -2,127 +2,510 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
-  <title>Doma</title>
-  <link id="stylesheet" rel="stylesheet" href="styles/style.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="logo.png">
-  <meta http-equiv="X-UA-Compatible" content="ie=e
-  dge">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="icon" type="image" href="https://avatars.githubusercontent.com/u/99858315?v=4">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
+  <title>M.Fathin Halim</title>
+  <style>
+    /* Add your custom styles here */
+    body {
+      font-family: Arial, sans-serif;
+      background: url("https://pxpx.imgix.net/2021/10/parallax-1.jpg?auto=compress%2Cformat&fit=crop&h=1080&q=90&w=1920&s=1b27afe5d267cee4c23c37e4c2cd1067");
+      height: 100vh;
+      background-attachment: fixed;
+      background-position: top center;
+      background-size: cover;
+    }
+
+    .jumbotron {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://cdn.discordapp.com/attachments/1074508165028257873/1144932367904014336/eb50875a68b04b0480fa929af2c7547c.gif');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      margin-bottom: 0;
+    }
+
+    a,
+    li,
+    h2 {
+      color: #E5D283;
+    }
+
+    .display-4,
+    .lead {
+      margin: 0;
+    }
+
+    .feature-icon {
+      font-size: 48px;
+      color: #007bff;
+    }
+
+    .feature-heading {
+      font-size: 24px;
+      margin-top: 10px;
+    }
+
+    .footer {
+      background-color: #333;
+      color: white;
+    }
+
+    /* Additional styles for a more professional look */
+    .container {
+      margin-top: 30px;
+    }
+
+    .card {
+      border: none;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .btn-primary {
+      background-color: #007bff;
+      bord er: none;
+    }
+
+    .btn-primary:hover {
+      background-color: #0056b3;
+    }
+
+    .navbar {
+      background-color: #333;
+    }
+
+    .navbar-dark .navbar-nav .nav-link {
+      color: white;
+    }
+
+    .navbar-dark .navbar-toggler-icon {
+      background-color: white;
+    }
+
+    .bg-dark {
+      background: rgba(255, 255, 255, 0.31) !important;
+      border-radius: 16px;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(8.9px);
+      -webkit-backdrop-filter: blur(8.9px);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      padding: 15px;
+    }
+
+    @media screen and (min-width: 1219px) {
+      .car {
+        max-width: 350px;
+        margin-left: 200px;
+      }
+    }
+
+    ::-webkit-scrollbar {
+      width: 2px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+      border-radius: 10px;
+      background: rgba(0, 0, 0, 0) !important;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+      background: #E5D283;
+      border-radius: 2px;
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+      background: #DAC0A3;
+    }
+  </style>
 </head>
 
-<body>
-  <header>
-    <div class="card">
-      <img id="logo" src="logo.png" />
-      <h2>Hello There!</h2>
-      <a href="index.html">English Language?</a>
+<body class="text-white">
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top"
+    style="background: rgba(0, 0, 0, 0.31) !important; border-radius: 0px; border: none;">
+    <a class="navbar-brand" href="#">M. Fathin Halim</a>
+    <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fas fa-bars"></i> <!-- Uses the bars icon from Font Awesome -->
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#learn-more">About Me</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#profileCarousel">Profile</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#skills">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#project">Project</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#education">Education</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#services">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="btn btn-outline-light rounded-pill" href="indo.html">Switch to Indonesian</a>
+          <!-- Link to the Indonesian version -->
+        </li>
+
+      </ul>
+    </div>
+  </nav>
+
+  <header class="jumbotron text-center" style="padding-top: 135px;">
+    <h1 class="display-4"><strong>Hi! My name is M. Fathin Halim</strong></h1>
+    <p class="lead" style="color: #E5D283">A Young Programmer and Japan Lover</p>
+    <br>
+    <h3>ファティン</h3>
   </header>
-  <main>
-    <div class="card">
-      <div class="card">
-        <div class='console-container'>
-          <h1 id='text'></h1>
+
+  <div class="container mt-5" id="learn-more">
+    <div class="row">
+      <div class="col-md-6">
+        <h2 class="mb-3">About M. Fathin Halim</h2>
+        <p>M.Fathin Halim is a middle school student in Indonesia who has had a strong interest in programming since
+          small. He really likes Japan and its technology. Fathin has developed various innovative applications,
+          including in education and social media, with creativity and high enthusiasm for learning.</p>
+
+        <p>Through his dedication and passion, Fathin has succeeded in creating several innovative applications
+          including
+          various
+          fields, ranging from educational applications to Social Media. Every app he makes is a result
+          from
+          creativity and determination to continue learning and developing. Some examples of applications include:</p>
+        <ul data-aos="fade-right">
+          <li><strong>Rejang Language Dictionary:</strong> A digital dictionary application that helps users to
+            understand
+            And
+            learn Rejang language, one of the regional languages in Indonesia.</li>
+          <li><strong>Menfess:</strong> An anonymous social media platform that allows users to share
+            thoughts and
+            experience freely without identity being revealed.</li>
+          <li><strong>Intergalactic Science Kingdom Discord Web:</strong>A website dedicated to exploring
+            science content via the Discord Server owned by Fajrul Fx on YouTube</li>
+          <li><strong>And More!</strong></li>
+        </ul>
+
+      </div>
+      <div class="col-md-6 car" style="border-radius: 16px !important; ">
+        <div id="profileCarousel" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#profileCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#profileCarousel" data-slide-to="1"></li>
+            <li data-target="#profileCarousel" data-slide-to="2"></li>
+
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="Doma1.jpg" class="d-block w-100 img-fluid rounded" alt="M. Fathin Halim">
+            </div>
+            <div class="carousel-item">
+              <img src="Doma2.jpg" class="d-block w-100 img-fluid rounded" alt="M. Fathin Halim">
+            </div>
+            <div class="carousel-item">
+              <img src="Doma3.jpg" class="d-block w-100 img-fluid rounded" alt="M. Fathin Halim">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#profileCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#profileCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
         </div>
-
-        <h2> </h2>
-
-      </div>
-      <article class="card2 reveal">
-        <h2>Developer</h2>
-        <h4><strong>M.Fathin Halim</strong> adalah seorang siswa sekolah menengah yang hobi membuat aplikasi. Beberapa
-          Aplikasi yang telah
-          dia buat antara lain</h4>
-        <a href="#kamus">Kamus Bahasa
-          Rejang</a>
-        <br>
-        <a href="#menfess">Menfess!</a>
-        <br>
-        <a href="#pvz">Plane VS Zombie</a>
-
-        <h4 class="card4"><strong>Umur:</strong> 13 Tahun</h4>
-        <h4 class="card4"><strong>Tanggal:</strong> 7-Maret</h4>
-        <h4 class="card4"><strong>Main Game:</strong> Minecraft, Genshin Impact serta Osu!</h4>
-        
-      </article>
-
-      <!--Bahasa Pemograman-->
-      <div class="card2 reveal" style="background-image: linear-gradient(to right, #af95fa, #caa9f8);;">
-        <h1 style="color: #75629c;">Bahasa Pemograman:</h1>
-          <img src="Java.png" style=" height:100%;"></img>
-          <img src="Python.png" style=" height:100%;"></img>
-          <img src="Javascript.png" style=" height:100%;"></img>
-          <img src="CS.png" style=" height:100%;"></img>
       </div>
 
-      <div class="card2 reveal">
-        <h3>Media Sosial: </h3>
-        <h4 class="card4 reveal"><strong>Github:</strong> M-Fathin-Halim</h4>
-        <h4 class="card4 reveal"><strong>Instagram:</strong> @doma_tomoharu</h4>
-        <h4 class="card4 reveal"><strong>Facebook:</strong> Doma Kun</h4>
-        <h4 class="card4 reveal"><strong>Youtube:</strong> @doma1351</h4>
-        <h4 class="card4 reveal"><strong>Discord:</strong> Doma Tomoharu#7144</h4>
-        <h4 class="card4 reveal"><strong>Email:</strong> halimfathin7@gmail.com, domafathin@gmail.com</h4>
-        <article class="card4 reveal"><a href="https://saweria.co/domaTomoharu"><strong>Saweria:</strong>
-            https://saweria.co/domaTomoharu </a></article>
-      </div>
-      <div class="card2 reveal">
-        <h2>Aplikasi</h2>
-        <article class="card4 reveal" id="kamus">
-          <img class="galeri" src="kamus.png" style="box-shadow: none;" />
-          <h3><strong>Kamus Bahasa Rejang</strong></h3>
-          <h4>Kamus Bahasa Rejang adalah sebuah aplikasi berbasis android penerjemah antara bahasa Indonesia dan bahasa
-            Rejang!</h4>
-
-          <a
-            href="https://play.google.com/store/apps/details?id=org.kamusbahasarejang.kamusbahasarejang&hl=en">Download</a>
-        </article>
-        <article class="card4 reveal" id="menfess">
-          <img class="galeri" src="Menfess.png" />
-          <h3><strong>Menfess!</strong></h3>
-          <h4>Menfess! adalah sebuah aplikasi Media Sosial anak muda dimana kalian dapat mengungkapkan perasaan kalian!
-            di
-            aplikasi itu juga kalian juga dapat mengupload memes dan membahas Anime juga!</h4>
-          <a href="https://menfess.mfathinhalim.repl.co/">Website!</a>
-          <br>
-          <a href="https://play.google.com/store/apps/details?id=com.domatomoharu.menfess">Download</a>
-          <br>
-          <a href="https://www.instagram.com/michael4743a/"><strong>Credit Tampilan:</strong><br> Terima Kasih
-            Kepada:<br>
-            <br>IG:<strong>@michael4743a</strong><br>Discord:<br><strong>AmaliaIsLonely#8517</strong><br><br>Karena
-          telah membantu dalam pembuatan design aplikasi Menfess! </a>
-          <br>
-          <br>
-          <a>Terimakasih juga kepada <strong>Min Akhilkariim Ziddan</strong><br>yang telah membantu mendevelop aplikasi ini!</a>
-        </article>
-        <article class="card4 reveal" id="pvz">
-          <img src="PVZ.png" class="galeri" style="box-shadow: none;" />
-          <h3><strong>Plane VS Zombie</strong></h3>
-          <h4>Plane VS Zombie adalah sebuah game yang dibuat <strong>M.Fathin Halim</strong> dan <strong>Nabeel
-              Adriansyah</strong> dimana kita harus menyelamatkan orang sebanyak mungkin didalam dunia penuh Zombie!
-          </h4>
-
-          <a href="https://nabeela.itch.io/plane-vs-zombie-desktop">Download</a>
-        </article>
-      </div>
-      
     </div>
+  </div>
 
-      <!-- Media Sosial -->
-      <div class="card2 reveal">
-        <h3>Galery:</h3>
-        <h4>Bukit Kaba, Rejang Lebong, Bengkulu, Indonesia</h4>
-        <article id="galericard">
-          <div style="background-image: url('Doma1.jpg');"></div>
-          <div style="background-image: url('Doma2.jpg');"></div>
-          <div style="background-image: url('Doma3.jpg');"></div>
-          <div style="background-image: url('Doma4.jpg');"></div>
-        </article>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-sm bg-dark m-2" data-aos="zoom-in">
+        <div class="text-center">
+          <span class="feature-icon">&#128187;</span>
+          <h3 class="feature-heading mt-3">Programming Languages Used by Fathin</h3>
+          <ul class="list-unstyled">
+            <li>Python</li>
+            <li>JavaScript</li>
+            <li>Java Android Studio</li>
+            <li>C# Unity</li>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <!-- Add other programming languages used by Fathin -->
+          </ul>
+        </div>
+      </div>
+      <div class="col-sm bg-dark m-2" data-aos="zoom-in" id="contact">
+        <div class="text-center">
+          <span class="feature-icon">&#127968;</span>
+          <h3 class="feature-heading mt-3">Fathin Social Media</h3>
+          <ul class="list-unstyled">
+            <li><a href="https://www.instagram.com/doma_tomoharu" target="_blank">Instagram</a></li>
+            <li><a href="https://www.twitter.com/DomaTomoharu" target="_blank">Twitter</a></li>
+            <li><a href="https://www.facebook.com/profile.php?id=100085410154411" target="_blank">Facebook</a></li>
+            <li><a href="https://github.com/Doma-Tomoharu" target="_blank">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/m-fathin-halim-8b8198288/" target="_blank">LinkedIn</a></li>
+            <li><a href="https://discord app.com/users/996329194780901376" target="_blank">Discord
+              </a></li>
+            <!-- Add Fathin's other social media accounts -->
+          </ul>
+        </div>
+      </div>
+      <div class="col-sm bg-dark m-2" data-aos="zoom-in">
+        <div class="text-center">
+          <span class="feature-icon">&#128736;</span>
+          <h3 class="feature-heading mt-3">Responsive and Attractive Appearance</h3>
+          <p style="color: #E5D283;">We use Bootstrap to create a responsive and responsive interface
+            professional for experience
+            the web is better.</p>
+        </div>
       </div>
     </div>
-  </main>
+  </div>
+
+  <div class="container mt-5" id="project">
+    <h2 class="mb-3">Latest Projects</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card bg-dark m-2" style="height: 530px;">
+          <img src="PVZ.png" style="max-height: 200px; object-fit: contain;" class="card-img-top" alt="Project 1"
+            data-aos="zoom-in">
+          <div class="card-body">
+            <h5 class="card-title">Plane VS Zombies</h5>
+            <p class="card-text">A fun game where players have to control a plane
+              For
+              oppose
+              incessant zombie attacks.</p>
+            <a href="https://nabeela.itch.io/plane-vs-zombie-desktop" class="btn btn-primary">Check it out on
+              Itch.IO!</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card bg-dark m-2" style="height: 530px;">
+          <img src="kamus.png" style="height: 200px; border-radius: 10px; object-fit: contain;" class="card-img-top"
+            alt="Project 2" data-aos="zoom-in">
+          <div class="card-body">
+            <h5 class="card-title">Rejang Language Dictionary</h5>
+            <p class="card-text">A digital dictionary application that helps users to understand
+              And
+              learn Rejang language, one of the regional languages in Indonesia.</p>
+            <a href="https://kamusrejang.rejanglebongkab.go.id/" class="btn btn-primary">View Details</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card bg-dark m-2" style="height: 530px;">
+          <img
+            src="https://play-lh.googleusercontent.com/ctZv22_YORB0adQB_V4eOo4pgm4Js744yB4wOPhTVbPSOm_Lg0opMsIjC9xTc2EdwQ=w240-h480"
+            style="height: 200px; border-radius: 10px; object-fit: contain;" class="card-img-top" alt="Project 3"
+            data-aos="zoom-in">
+          <div class="card-body">
+            <h5 class="card-title">Menfess</h5>
+            <p class="card-text">An anonymous social media platform that allows users
+              to share thoughts
+              and experience freely without identity being revealed.</p>
+            <a href="https://menfess.mfathinhalim.repl.co/" class="btn btn-primary">View Website</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card bg-dark m-2" style="height: 530px;">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_qPXb39NmgD7ZFO-FSu3qb3snka5QeFNC9Q&usqp=CAU"
+            style="height: 200px; border-radius: 10px; object-fit: contain;" class="card-img-top" alt="Project 3"
+            data-aos="zoom-in">
+          <div class="card-body">
+            <h5 class="card-title">My Simple Notes</h5>
+            <p class="card-text">A website where you can save your notes! M. Fathin Halim made it forkeep his notes and
+              to learn the ReactJS framework!</p>
+            <a href="https://my-simple-notes.mfathinhalim.repl.co/" class="btn btn-primary">View Website</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card bg-dark m-2" style="height: 530px;">
+          <img src="https://cerdasai.fatih-jihadijih.repl.co/Logo.jpg"
+            style="height: 200px; border-radius: 10px; object-fit: contain;" class="card-img-top" alt="Project 3"
+            data-aos="zoom-in">
+          <div class="card-body">
+            <h5 class="card-title">Smart AI</h5>
+            <p class="card-text">Smart AI is a user-friendly bot application that brings the benefits of AI to all
+              people, including parents, without needing to log in, making it easily accessible via platforms such as
+              WhatsApp.
+            </p>
+            <a href="https://cerdasai.fatih-jihadijih.repl.co/" class="btn btn-primary">View Website</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card bg-dark m-2" style="height: 530px;">
+          <img src="https://sciencekingdom.gg/image/LogoISK.gif"
+            style="height: 200px; border-radius: 10px; object-fit: contain;" class="card-img-top" alt="Project 3"
+            data-aos="zoom-in">
+          <div class="card-body">
+            <h5 class="card-title">Intergalactic Science Kingdom Website</h5>
+            <p class="card-text">A website dedicated to exploring science content via Discord
+              Server owned by Fajrul Fx on YouTube.</p>
+            <a href="https://sciencekingdom.gg/" class="btn btn-primary">View Website</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card bg-dark m-2" style="height: 530px;">
+          <img src="https://media.discordapp.net/attachments/1142764409849122839/1155457111422148638/Menfess.png"
+            style="height: 200px; border-radius: 10px; object-fit: contain;" class="card-img-top" alt="Project 3"
+            data-aos="zoom-in">
+          <div class="card-body">
+            <h5 class="card-title">Diskuline</h5>
+            <p class="card-text">Diskuline is a discussion social media platform that facilitates various
+              conversation and discussion. Users can share questions, topics and images and interact with
+              fellow users.</p>
+            <a href="https://diskuline.mfathinhalim.repl.co/" class="btn btn-primary">View Website</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mt-5 bg-dark" id="education">
+    <h2 class="mb-3">Education</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <h4>TWO</h4>
+        <p><strong>Graduation Year:</strong> 2022</p>
+      </div>
+      <div class="col-md-6">
+        <h4>SMP Negeri 1 Rejang Lebong</h4>
+        <p><strong>Class: </strong> 7G, 8G</p>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5 bg-dark" id="skills">
+    <h2 class="mb-3">Skills</h2>
+    <div class="row">
+      <div class="col-md-6" data-aos="fade-up">
+        <h4>Technical Skills</h4>
+        <ul>
+          <li>Programming Languages: Python, JavaScript, Java, C#</li>
+          <li>Web Development: HTML5, CSS3, Bootstrap</li>
+          <li>Game Development: Unity</li>
+          <!-- Add other technical skills -->
+        </ul>
+      </div>
+      <div class="col-md-6" data-aos="fade-right">
+        <h4>Non-Technical Skills</h4>
+        <ul>
+          <li>Web Design Creativity</li>
+          <li>Communication Ability</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5 bg-dark" data-aos="fade-right">
+    <h2 class="mb-3">Certifications and Awards</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <h4>Award for the work of the Rejang Language Dictionary</h4>
+        <p><strong>Year:</strong> 2020</p>
+        <p><strong>Description:</strong> Appreciation for the work developed by the Rejang Language Dictionary</p>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-4">
+    <div class="card bg-dark text-center mb-4" id="services" data-aos="flip-right">
+      <div class="card-body">
+        <h2 class="card-title">Simple Website Creation Services</h2>
+        <p class="card-text">Want to have a website like M.Fathin Halim? We provide
+          website creation services
+          with professional quality and attractive design. Discuss your needs with M.Fathin Halim via
+          Discord
+          or Email!</p>
+        <ul class="list-unstyled">
+          <li>Simple Portfolio</li>
+          <li>An Application with a Simple Backend</li>
+          <li>Website about class or school</li>
+          <li>Personal website</li>
+          <li>Website about the team</li>
+          <li>And others</li>
+        </ul>
+        <p>We use Express based NodeJS sas Backend and Bootstrap as styling on the Frontend for
+          creating responsive and attractive websites.</p>
+        <a class="btn btn-outline-primary text-white"
+          href="https://discord app.com/users/923182213779062804">Interested?
+          Come on
+          Chat!</a>
+      </div>
+    </div>
+  </div>
+
+
+  <footer class="mt-5 py-4 text-center footer bg-dark">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h4>Contact Me</h4>
+          <p>If you are interested in working together or have further questions, please don't hesitate to get in touch
+            I
+            via one of the methods below:</p>
+          <ul class="list-unstyled">
+            <li><a href="mailto:halimfathin7@gmail.com">halimfathin7@gmail.com</a></li>
+            <li><a href="https://discord app.com/users/923182213779062804">Discord
+              </a></li>
+            <li><a href="https://www.linkedin.com/in/m-fathin-halim-8b8198288/">LinkedIn</a></li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <h4>Useful Links</h4>
+          <ul class="list-unstyled">
+            <li><a href="#learn-more">About Me</a></li>
+            <li><a href="#profileCarousel">Profile</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#project">Project</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="https://my-template.mfathinhalim.repl.co/">Template</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <p class="mt-3">&copy; 2023 M. Fathin Halim - All rights reserved</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script>
+    AOS.init();
+  </script>
 </body>
-<script src="script.js"></script>
 
 </html>
